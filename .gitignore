@@ -44,6 +44,3 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-
-lib/screen/my_feeds_screen.dart
-lib/features/feeds/presentation/controllers/my_feeds_controller.dart

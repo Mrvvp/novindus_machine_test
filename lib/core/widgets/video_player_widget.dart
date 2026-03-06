@@ -64,9 +64,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
         });
         _syncPlayback();
       }
-    } catch (e) {
-      debugPrint("Video initialization error: $e");
-    }
+    } catch (e) {}
   }
 
   @override

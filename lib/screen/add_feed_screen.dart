@@ -190,7 +190,7 @@ class _AddFeedScreenState extends State<AddFeedScreen> {
                     maxLines: 4,
                     style: const TextStyle(color: Colors.white70),
                     decoration: InputDecoration(
-                      hintText: 'Lorem ipsum dolor sit amet...',
+                      hintText: 'Enter Description',
                       hintStyle: TextStyle(
                         color: Colors.white.withOpacity(0.3),
                       ),

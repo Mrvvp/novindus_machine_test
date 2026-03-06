@@ -54,9 +54,7 @@ class HomeController extends ChangeNotifier {
         _selectedCategoryId = null;
       }
       notifyListeners();
-    } catch (e, stack) {
-      debugPrint("Error in HomeController: $e");
-      debugPrint(stack.toString());
+    } catch (e) {
       _isLoading = false;
       _errorMessage = e.toString();
       notifyListeners();

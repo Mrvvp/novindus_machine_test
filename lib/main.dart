@@ -5,6 +5,8 @@ import 'package:novindus_test/core/utils/app_theme.dart';
 import 'package:novindus_test/core/di/dependency_injection.dart';
 import 'package:novindus_test/features/auth/presentation/controllers/auth_controller.dart';
 import 'package:novindus_test/features/home/presentation/controllers/home_controller.dart';
+import 'package:novindus_test/features/feeds/presentation/controllers/my_feeds_controller.dart';
+import 'package:novindus_test/features/feeds/presentation/controllers/feed_upload_controller.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,6 +23,16 @@ void main() {
           create: (_) => HomeController(
             getHomeDataUseCase: DependencyInjection.getHomeDataUseCase,
             getCategoriesUseCase: DependencyInjection.getCategoriesUseCase,
+          ),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => MyFeedsController(
+            getMyFeedsUseCase: DependencyInjection.getMyFeedsUseCase,
+          ),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => FeedUploadController(
+            uploadUseCase: DependencyInjection.uploadFeedUseCase,
           ),
         ),
       ],
