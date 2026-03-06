@@ -3,4 +3,6 @@ class ApiEndpoints {
   static const String mediaBaseUrl = 'https://frijo.noviindus.in';
 
   static const String login = '/otp_verified';
+  static const String categoryList = '/category_list';
+  static const String home = '/home';
 }
