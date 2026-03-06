@@ -46,7 +46,4 @@ app.*.map.json
 
 
 lib/screen/my_feeds_screen.dart
-lib/screen/my_feeds_screen.dart
-lib/features/feeds
-lib/screen/add_feed_screen.dart
-lib/screen/my_feeds_screen.dart
+lib/features/feeds/presentation/controllers/my_feeds_controller.dart
